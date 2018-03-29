@@ -1,0 +1,25 @@
+/* pages/zflist/index.wxss */
+page{background:#f7f7f7;}
+.module{width:100%;background:#fff;margin-bottom:20rpx;}
+.module-title{height:100rpx;line-height:100rpx;font-size:38rpx;width:100%; text-align: center;border-bottom:1px solid #dddddd;}
+
+.module-title .left{
+  width:80rpx;
+  height:27rpx;
+  margin-right: 17rpx;
+}
+.module-title .right{
+  width:80rpx;
+  height:27rpx;
+  margin-left: 17rpx;
+}
+.items{
+ padding:1% 2%;
+ width:96%;
+ overflow:hidden;
+}
+.item{width:46%; text-align: center;padding:0 2%;float:left;margin:10rpx 0;}
+.item image{width:100%;}
+.item text{font-size:32rpx;}
+
+.area{font-size:24rpx;color:#ea5841;border:1px solid #ea5841;border-radius:10rpx;padding:0 10rpx;margin:0 20rpx;}

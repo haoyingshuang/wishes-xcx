@@ -1,0 +1,43 @@
+<import src="../wxParse/wxParse.wxml"/> 
+<view class='main' style="border:0px solid #000fff;background-image:url({{bgGif}});background-repeat: repeat; ">
+    <view class='header'><image mode="widthFix" src='{{topGif}}'></image></view>
+    <view class='advtor'><image animation="{{animationData}}" src='{{headImg}}'></image><text>{{nick}}</text></view>
+    <!--播放按钮-->
+    <view class='music-box'>
+      <image src='../../images/music-play.png' bindtap='toPause' hidden='{{hidePlayImg}}'></image>
+      <image src='../../images/music-pause.png' bindtap='toPlay' hidden='{{hidePauseImg}}'></image>
+    </view>
+      <view class='content-main'>
+        <view class="wxParse">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+      </view>
+    <!--福袋-->
+    <view class='alink'  bindtap='jumpToApp'><image mode='widthFix' src='../../images/foot_pic.png'></image></view>
+    <!--底部图片-->
+    <view class='footer-pic'><image mode='widthFix' src='../../images/diwen.png'></image></view>
+    <!--更多祝福-->
+    <view class='morezf'  bindtap='jumpToApp'>
+      <image src='../../images/morezf.png'></image>
+    </view>
+    <!--发送朋友按钮-->
+    <view class='footer-btn'>
+
+      <button open-type='share' hidden='{{hideShareBtn}}'>将祝福送给朋友</button>
+
+      <form bindsubmit="toIndex" report-submit='true' hidden='{{hideIndexBtn}}'>
+        <button  form-type='submit'>我也要送祝福</button>
+      </form>
+
+    </view>
+    
+    <!--播放器隐藏-->
+    <view class='audiobox'>
+      <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+    </view>
+</view>

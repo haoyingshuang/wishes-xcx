@@ -1,0 +1,18 @@
+<view class='main'>
+
+    <view class="module" wx:for="{{data}}" wx:for-item="item" wx:key="index">
+        <view class='module-title'>
+
+          <image class="left" mode="widthFix" src="../../images/left.png"></image>
+          {{item.title}}
+          <image class="right" mode="widthFix" src="../../images/right.png"></image>
+
+        </view>
+        <view class='items'>
+            <view class='item' wx:for="{{item.temps}}" wx:for-item="sitem" wx:key="sindex" bindtap='showDetail' id="{{sitem.id}}">
+                <image mode="widthFix" src="{{sitem.pic}}"></image>
+                <text>{{sitem.title}}</text>
+            </view>
+        </view>
+    </view>
+</view>

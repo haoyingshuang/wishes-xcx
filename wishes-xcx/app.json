@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/template/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#db282b",
+    "navigationBarTitleText": "祝福快车",
+    "navigationBarTextStyle":"wight"
+  }
+}
