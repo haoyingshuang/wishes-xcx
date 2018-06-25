@@ -164,7 +164,7 @@ App({
   collectFormId: function (event) {
     //收集formId
     let formId = event.detail.formId;
-    //console.log('form发生了submit事件，推送码为：', formId)
+    //console.log('form发生了submit事件1，推送码为：', formId)
     //wx.showModal({title: 'formid',content: formId,});
 
     wx.request({
